@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+<style>
+   body{
+    background-color: #88b7ca;
+    padding: 100px;
+   } 
+
+   div.add{
+    border: 2px solid black;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(188, 219, 221);
+    padding: 10px;
+    border-radius: 16px;
+}
+</style>
+</head>
+<body>
+    <center>
+      <div class="add">
+    <h1>Welcome</h1>
+
+  <a href="{% url 'view_students' %}">
+    <button type="button" style="background-color: #007bff; padding: 8px; border-color: #007bff; border-radius: 4px;">View Students</button>
+  </a>
+  <br>
+  <br>
+  <a href="{% url 'add_student' %}">
+    <button type="button" style="background-color: #007bff; padding: 8px; border-color: #007bff; border-radius: 4px;">Add Student</button>
+  </a>
+  </div>
+  </center>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+    <style>
+        body{
+            font-size: large;
+            font-family: Arial;
+            background-color: rgb(153, 183, 209);
+            padding: 100px;
+        }
+
+        div.add{
+    border: 2px solid black;
+    width: 600px;
+    height: 200px;
+    background-color: rgb(188, 219, 221);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+    </style>
+</head>
+<body>
+    <center>
+        <div class="add">
+    <h1>Student added successfully!</h1>
+    <a href="{% url 'add_student' %}"><button style="background-color: #007bff; padding: 8px; border-color: #007bff; border-radius: 4px;">Add another student</button></a>
+    <div class="view">    
+    <br>
+    <a href="{% url 'view_students' %}">
+    <button type="button" style="background-color: #007bff; padding: 8px; border-color: #007bff; border-radius: 4px;">View Students</button>
+    </a>
+    <br>
+    </div>
+    </center>
+</body>
+</html>
